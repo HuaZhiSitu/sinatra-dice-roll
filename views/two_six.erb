@@ -1,0 +1,25 @@
+<h1>2d6</h1>
+
+<!--<ul>-->
+  <%# @rolls.each do |a_roll| %>
+<!--    <li>-->
+      <%#= a_roll %>
+<!--    </li>-->
+  <%# end %>
+<!--</ul>-->
+
+
+
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <% if a_roll == 1 %>
+        <p style="color: red"><%= a_roll %></p>
+      <% elsif a_roll == 6 %>
+        <p style="color: green"><%= a_roll %></p>
+      <% else %>
+        <p><%= a_roll %></p>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
